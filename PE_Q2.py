@@ -6,13 +6,23 @@
 #By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
 fib = []
-fib_0_init = 1
-fib_1_init = 2
+fib_fin = 0
+x = 2
+y = 1
+z = 0
 
-#while fib[n] < 4000000:
-#	fib[n] = fib[n] + fib[n-1]
+#Initial Conditions
+fib.append(y)
+fib.append(x)
 
-def fib(n):
+while z < 4000000:
+	z = x + y
+	fib.append(z)
+	y = x 
+	x = z
 
+for i in range(len(fib)):
+	if fib[i] % 2 == 0:
+		fib_fin += fib[i]
 
-	
+print fib_fin
