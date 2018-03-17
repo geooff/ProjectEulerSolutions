@@ -6,28 +6,42 @@
 #How to find if prime?
 
 orig_num = 600851475143
-num = 4000
+num = 600851475143
 
-sqt_num = int(num ** 0.5)
 fact_list = []
+prime_list = []
 
-
-def get_factors(num):
-	for i in range(1, num):
+def get_factors(num): #Takes a large number and returns factors
+	for i in xrange(1, num):
 		if num % i == 0:
 			fact_list.append(i)
+			#break
 	return fact_list
 
-print get_factors(num)
+def get_prime(num): #Takes a list of factors and returns their primality
+	is_prime = False
+	for j in num:
+		prime_list.append(j)
+		for i in xrange(2, j):
+			if j % i == 0:
+				is_prime = False
+				break
+			else:
+				is_prime = True
+		prime_list.append(is_prime)
+	return prime_list
 
-def get_prime_factores(factors):
-	prime_fact_list = []
-	for i in range(len(factors)):
-		print fact_list(i)		
-		#for j in range(get_factors(i)):
-		#	if get_factors(i) % j == 0:
-		#		prime_fact_list.append(get_factors(i))
-	#return prime_fact_list
+#print get_factors(num)
+print get_prime(get_factors(num))
+#print get_prime(get_factors(num))
 
-print get_prime_factores(get_factors(num))
+# def get_prime(num):
+# 	is_prime = False
+# 	for i in xrange(2, num):
+# 		if num % i == 0:
+# 			is_prime = False
+# 			break
+# 		else:
+# 			is_prime = True
+# 	return is_prime
 				
