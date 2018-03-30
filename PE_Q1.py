@@ -3,7 +3,10 @@
 
 #make list of multiples of 3
 #make list of multiples of 5
+#need i%3 U i%5
 #sum lists
+
+
 total = 0
 listx = []
 for i in range(1000):
