@@ -8,3 +8,10 @@ My solutions to Project Euler questions. Question completion dates:
 
 ## Python 3 Solutions
 * Question 4: 2020/01/27
+* Question 5: 2020/02/02
+* Question 6: 2020/02/02
+* Question 7: 2020/02/02
+* Question 8: 2020/02/02
+* Question 9: 2020/02/02
+* Question 10: 2020/02/02
+* Question 11: 2020/02/02
